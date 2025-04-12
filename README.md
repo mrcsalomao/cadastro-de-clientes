@@ -38,6 +38,17 @@ ng build
 Isso compilará o seu projeto e armazenará os artefatos de constrção no diretório `dist/`. Por padrão, a construção otimiza seu aplicativo para desempenho e velocidade.
 
 
+## Docker
+
+Para dockerizar a aplicação execute:
+
+```bash
+docker build . -t cadastro-de-clientes -f Dockerfile
+```
+
+### URL
+- http://localhost:3000/
+
 ## Recurso Adcional
 
 - Angular Material
@@ -46,3 +57,5 @@ Isso compilará o seu projeto e armazenará os artefatos de constrção no diret
 - RXJS
 - flex-layout
 - Local storage
+- Docker
+
