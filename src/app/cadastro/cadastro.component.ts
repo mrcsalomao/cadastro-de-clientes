@@ -70,7 +70,9 @@ export class CadastroComponent implements OnInit {
 
   carregarUfs(){
     this.brasilApiService.listarUfs().subscribe({
-      next: listaEstados  => this.estados = listaEstados,
+      next: listaEstados  =>
+        this.estados = listaEstados.sort((a, b) =>
+        a.sigla.localeCompare(b.sigla)),
       error: error => console.log("ocorreu um erro: ", error),
     })
   }
